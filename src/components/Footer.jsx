@@ -92,6 +92,14 @@ const Wrapper = styled.div`
     gap: 1em;
     text-transform: capitalize;
   }
+
+  .gym-class:hover,
+  .gym-class:focus {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--clr-primary-1);
+    /* font-size: 0.95rem; */
+  }
   .day {
     color: var(--clr-font);
   }

@@ -2,6 +2,7 @@ import { useSelector } from "react-redux"
 import styled from "styled-components"
 import { GalleryC, PageButton } from "../components"
 import { MdNavigateNext } from "react-icons/md"
+import { Link } from "react-router-dom"
 
 const GalleryPage1 = () => {
   const { galleryData } = useSelector((store) => store.appSlice)
@@ -12,8 +13,12 @@ const GalleryPage1 = () => {
         <GalleryC data={galleryData[0]} />
         <div className="button-wrapper">
           <PageButton pageNum="1" backColor="yes" />
-          <PageButton pageNum="2" />
-          <PageButton pageNum={<MdNavigateNext className="next-icon" />} />
+          <Link to="page-2">
+            <PageButton pageNum="2" />
+          </Link>
+          <Link to="page-2">
+            <PageButton pageNum={<MdNavigateNext className="next-icon" />} />
+          </Link>
         </div>
       </div>
     </Wrapper>

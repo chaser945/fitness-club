@@ -4,9 +4,14 @@ const GalleryC = ({ data }) => {
   return (
     <Wrapper>
       <div className="image-gallery section-wrapper">
-        {data.map((c) => {
+        {data.map((c, index) => {
           return (
-            <img className="gallery-img" src={c.url} alt="a person doing gym" />
+            <img
+              key={index}
+              className="gallery-img"
+              src={c.url}
+              alt="a person doing gym"
+            />
           )
         })}
       </div>
