@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import { Navbar, Sidebar } from "./components"
+import { Footer, Navbar, Sidebar } from "./components"
 import { useEffect, useState } from "react"
 import {
   About,
@@ -7,6 +7,7 @@ import {
   Classes,
   Contact,
   Gallery,
+  GalleryPage1,
   Home,
   Pricing,
   Schedule,
@@ -21,7 +22,7 @@ const App = () => {
   const dispatch = useDispatch()
 
   const [y, setY] = useState(window.scrollY)
-  console.log(y)
+  // console.log(y)
 
   const handleNavigation = () => {
     setY(window.scrollY)
@@ -50,12 +51,15 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="/schedule" element={<Schedule />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery />}>
+          <Route index element={<GalleryPage1 />} />
+        </Route>
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/classes" element={<Classes />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

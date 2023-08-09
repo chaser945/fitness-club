@@ -1,4 +1,16 @@
+import styled from "styled-components"
+import { PageHero } from "../components"
+import { Outlet } from "react-router-dom"
 const Gallery = () => {
-  return <div>Gallery</div>
+  return (
+    <Wrapper>
+      <div className="gallery-wrapper">
+        <PageHero heading="gallery" />
+        <Outlet />
+      </div>
+    </Wrapper>
+  )
 }
 export default Gallery
+
+const Wrapper = styled.div``

@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit"
+import { galleryImages } from "../../utils"
 
 const initialState = {
   showSidebar: false,
   showButtonOut: true,
   showNavbarTransparent: true,
+  galleryData: galleryImages,
 }
 
 export const appSlice = createSlice({

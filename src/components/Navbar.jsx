@@ -41,7 +41,7 @@ export default Navbar
 
 const Wrapper = styled.div`
   .navbar {
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
     padding: 1em;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ const Wrapper = styled.div`
   }
 
   .join-class-text {
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 0;
     font-weight: 600;
     color: white;

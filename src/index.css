@@ -3,6 +3,7 @@
 :root {
   --clr-black: #000000;
   --clr-border: #565656;
+  --clr-border-1: #dee1e6;
   --clr-primary-1: #ff0336;
   --clr-primary-7: #ffc3cf;
   --clr-font: #646464;
@@ -35,7 +36,8 @@ img {
   width: 100%;
 }
 
-p {
+p,
+li {
   line-height: 1.6;
   color: var(--clr-font);
   font-weight: 500;

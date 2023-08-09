@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ButtonUniq, HistoryCard } from "../components"
+import { ButtonUniq, HistoryCard, PageHero } from "../components"
 import markerImg from "../assets/images/red-marker.svg"
 import { MdManageHistory } from "react-icons/md"
 import { GiAchievement } from "react-icons/gi"
@@ -8,11 +8,8 @@ const About = () => {
   return (
     <Wrapper>
       <section className="about-wrapper">
-        <div className="about-hero">
-          <h1 className="about-heading">About Us</h1>
-        </div>
-
-        {/* ABOUT US SECTION */}
+        <PageHero heading="about us" />
+        {/* ABOUT US SECTION  START*/}
         <div className="about-flex section-wrapper">
           <div className="about-us">
             <div
@@ -49,7 +46,7 @@ const About = () => {
             <img
               className="gym-girl"
               alt="gym girl"
-              src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1382&q=80"
+              src="https://plus.unsplash.com/premium_photo-1664884631987-89e917a8ae8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
             />
           </div>
         </div>
@@ -67,7 +64,7 @@ const About = () => {
             className="history-img"
           />
           <img
-            src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
             alt="girls exercising"
             className="history-img"
           />
@@ -76,6 +73,8 @@ const About = () => {
             heading="our history"
           />
         </div>
+
+        {/* HISTORY SECTION END */}
       </section>
     </Wrapper>
   )
@@ -84,26 +83,6 @@ export default About
 
 const Wrapper = styled.div`
   background-color: var(--clr-body);
-
-  .about-hero {
-    height: 40vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url("https://images.unsplash.com/photo-1604233098531-90b71b1b17a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .about-heading {
-    color: white;
-    margin: 0;
-    margin-bottom: 0.7em;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0.2em;
-    /* border-radius: 10px 0 10px 0; */
-  }
 
   .about-flex {
     padding: 5em 2em;

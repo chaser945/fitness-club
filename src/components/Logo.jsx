@@ -2,15 +2,19 @@ import styled from "styled-components"
 import { CgGym } from "react-icons/cg"
 import { Link } from "react-router-dom"
 
-const Logo = () => {
+const Logo = ({ headingColor, textColor }) => {
   return (
     <Wrapper>
       <Link>
         <div className="logo-wrapper">
           <CgGym className="logo-icon" />
           <div className="logo-content">
-            <h2 className="logo-heading">Fitness Club</h2>
-            <p className="logo-text">Ultimate gym center</p>
+            <h2 className="logo-heading" style={{ color: headingColor }}>
+              Fitness Club
+            </h2>
+            <p className="logo-text" style={{ color: textColor }}>
+              Ultimate gym center
+            </p>
           </div>
         </div>
       </Link>
