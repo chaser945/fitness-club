@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import styled from "styled-components"
-import { PageHero, WeekButton } from "../components"
-import { weekDays } from "../utils"
+import { PageHero, ScheduleCard, WeekButton } from "../components"
+import { classScheduleData, weekDays } from "../utils"
 
 const Schedule = () => {
+  const { day } = useParams()
   return (
     <Wrapper>
-      <div className="schedule-wrapper">
-        <PageHero heading="schedule by day" />
+      <PageHero heading="schedule by day" />
+      <div className="schedule-wrapper section-wrapper">
         <div className="days-wrapper">
           {weekDays.map((c, index) => {
             return (
@@ -15,6 +16,11 @@ const Schedule = () => {
                 <WeekButton weekDay={c} />
               </Link>
             )
+          })}
+        </div>
+        <div className="gym-classes-wrapper">
+          {classScheduleData[day].map((c, index) => {
+            return <ScheduleCard key={index} data={c} />
           })}
         </div>
       </div>
@@ -30,5 +36,11 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+  }
+  .gym-classes-wrapper {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 `

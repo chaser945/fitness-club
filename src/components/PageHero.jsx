@@ -14,7 +14,7 @@ export default PageHero
 
 const Wrapper = styled.div`
   .hero {
-    height: 45vh;
+    height: 35vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -34,9 +34,9 @@ const Wrapper = styled.div`
     /* border-radius: 10px 0 10px 0; */
   }
 
-  @media (max-width: 502px) {
+  /* @media (max-width: 502px) {
     .hero {
       height: 35vh;
     }
-  }
+  } */
 `

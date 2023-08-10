@@ -33,3 +33,45 @@ export const galleryImages = [[{ url: "https://images.unsplash.com/photo-1526506
 
 
 export const weekDays = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+export const classScheduleData = {
+    monday: [
+        { name_of_class: "fitness", time: "9:00am - 10:00am", trainer: "david vila" },
+        { name_of_class: "body building", time: "10:00pm - 11:00pm", trainer: "john weights" },
+        { name_of_class: "running", time: "4:00pm - 5:00pm", trainer: "junifor jonas" },
+        { name_of_class: "cycling", time: "6:00pm - 7:00pm", trainer: "robert louis" }
+    ],
+    tuesday: [
+        { name_of_class: "boxing", time: "9:00pm - 10:00am", trainer: "mike tyson" },
+        { name_of_class: "yoga", time: "10:00pm - 11:00pm", trainer: "mia kha" },
+        { name_of_class: "crossfit", time: "4:00pm - 5:00pm", trainer: "christopher columbo" },
+    ],
+    wednesday: [
+        { name_of_class: "cycling", time: "9:00am - 10:00am", trainer: "mario vreco" },
+        { name_of_class: "body building", time: "10:00pm - 11:00pm", trainer: "john weights" },
+        { name_of_class: "fitness", time: "4:00pm - 5:00pm", trainer: "tom rizzly" },
+        { name_of_class: "running", time: "6:00pm - 7:00pm", trainer: "michael jonson" }
+    ],
+    thursday: [
+        { name_of_class: "fitness", time: "9:00am - 10:00am", trainer: "david vila" },
+        { name_of_class: "body building", time: "10:00pm - 11:00pm", trainer: "john weights" },
+        { name_of_class: "running", time: "4:00pm - 5:00pm", trainer: "junifor jonas" },
+    ],
+    friday: [
+        { name_of_class: "crossfit", time: "9:00am - 10:00am", trainer: "mike mich" },
+        { name_of_class: "karate", time: "10:00pm - 11:00pm", trainer: "john jones" },
+        { name_of_class: "meditation", time: "4:00pm - 5:00pm", trainer: "lara croft" },
+        { name_of_class: "workout", time: "6:00pm - 7:00pm", trainer: "lary wheels" }
+    ],
+    saturday: [
+        { name_of_class: "power lifting", time: "9:00am - 10:00am", trainer: "david laid" },
+        { name_of_class: "boxing", time: "10:00pm - 11:00pm", trainer: "tyson fury" },
+        { name_of_class: "yoga", time: "4:00pm - 5:00pm", trainer: "milica tails" },
+    ],
+    sunday: [
+        { name_of_class: "fitness", time: "9:00am - 10:00am", trainer: "david vila" },
+        { name_of_class: "body building", time: "10:00pm - 11:00pm", trainer: "john weights" },
+        { name_of_class: "running", time: "4:00pm - 5:00pm", trainer: "junifor jonas" },
+        { name_of_class: "cycling", time: "6:00pm - 7:00pm", trainer: "robert louis" }
+    ],
+}

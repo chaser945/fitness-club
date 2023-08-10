@@ -7,6 +7,7 @@ import PageHero from "./PageHero"
 import GalleryC from "./GalleryC"
 import PageButton from "./PageButton"
 import WeekButton from "./WeekButton"
+import ScheduleCard from "./ScheduleCard"
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   GalleryC,
   PageButton,
   WeekButton,
+  ScheduleCard,
 }
