@@ -6,6 +6,7 @@ import Footer from "./Footer"
 import PageHero from "./PageHero"
 import GalleryC from "./GalleryC"
 import PageButton from "./PageButton"
+import WeekButton from "./WeekButton"
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   PageHero,
   GalleryC,
   PageButton,
+  WeekButton,
 }

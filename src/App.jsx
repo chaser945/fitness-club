@@ -51,11 +51,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="schedule" element={<Schedule />} />
         <Route path="gallery" element={<Gallery />}>
           <Route index element={<GalleryPage1 />} />
           <Route path="page-2" element={<GalleryPage2 />} />
         </Route>
+        <Route path="schedule/:day" element={<Schedule />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="pricing" element={<Pricing />} />

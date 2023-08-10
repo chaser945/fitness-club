@@ -2,7 +2,7 @@ export const navBarLinks = [
     { name: "home", path: "/" },
     { name: "about", path: "/about" },
     { name: "gallery", path: "/gallery" },
-    { name: "schedule", path: "/schedule" },
+    { name: "schedule", path: "/schedule/monday" },
     { name: "blog", path: "/blog" },
     { name: "pricing", path: "/pricing" },
     { name: "classes", path: "/classes" },
@@ -30,3 +30,6 @@ export const galleryImages = [[{ url: "https://images.unsplash.com/photo-1526506
 { url: "https://images.unsplash.com/photo-1549476464-37392f717541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" },
 { url: "https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" },
 { url: "https://images.unsplash.com/photo-1591027480007-a42f6ef886c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" },]]
+
+
+export const weekDays = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]

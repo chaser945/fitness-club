@@ -8,6 +8,7 @@
   --clr-primary-7: #ffc3cf;
   --clr-font: #646464;
   --clr-body: #f8f8f8;
+  --box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
   --transition-short: all 0.2s linear;
 }
 
