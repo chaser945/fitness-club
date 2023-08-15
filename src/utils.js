@@ -1,3 +1,5 @@
+import moment from "moment/moment"
+
 export const navBarLinks = [
     { name: "home", path: "/" },
     { name: "about", path: "/about" },
@@ -75,3 +77,139 @@ export const classScheduleData = {
         { name_of_class: "cycling", time: "6:00pm - 7:00pm", trainer: "robert louis" }
     ],
 }
+
+export const blogList = [
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: `yoga for everyone in ${new Date().getFullYear()}`,
+        text: "",
+        img_url: "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1452&q=80",
+    },
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: "getting back into crossfit after vacation",
+        text: "",
+        img_url: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
+    },
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: "meet fitness ambassador grace",
+        text: "",
+        img_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    },
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: "give your fitness a boost with our gym",
+        text: "",
+        img_url: "https://plus.unsplash.com/premium_photo-1661284886010-c58530c86b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: "how to get your kids moving throughout the summer",
+        text: "",
+        img_url: "https://images.unsplash.com/photo-1559838831-d8fbd8af6469?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    },
+    {
+        author: "admin",
+        date: moment().format("MMMM D, YYYY"),
+        exercise_name: "yoga",
+        title: "give your fitness a boost with our gym challenge",
+        text: "",
+        img_url: "https://plus.unsplash.com/premium_photo-1663126251623-adb89a41a31e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VtbWVyJTIwZ3ltfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    },
+
+]
+
+
+export const exerciseCategories = [
+    {
+        name: "body building",
+        quantity: 4,
+    },
+    {
+        name: "boxing",
+        quantity: 3,
+    },
+    {
+        name: "crossfit",
+        quantity: 4,
+    },
+    {
+        name: "fitness",
+        quantity: 4,
+    },
+    {
+        name: "meditation",
+        quantity: 4,
+    },
+    {
+        name: "yoga",
+        quantity: 2,
+    }
+]
+
+export const recentBlogPosts = [
+    {
+        title: `yoga for everyone in ${new Date().getFullYear()}`,
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1452&q=80",
+    },
+    {
+        title: "getting back into crossfit",
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80",
+    },
+    {
+        title: "meet fitness ambassador grace",
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+    },
+    {
+        title: "the best are european meditation practitioner",
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://images.unsplash.com/photo-1532798442725-41036acc7489?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80",
+    },
+    {
+        title: "learn boxing with our trainer john",
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://plus.unsplash.com/premium_photo-1672791862975-875406fe8f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
+    },
+    {
+        title: "how to get lean for the summer",
+        date: moment().format("MMMM D, YYYY"),
+        img_url: "https://plus.unsplash.com/premium_photo-1663126251623-adb89a41a31e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VtbWVyJTIwZ3ltfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    },
+]
+
+export const popularTags = ["crossfit", "fitness", "gym", "meditation", "running", "workout", "yoga", "boxing"]
+
+export const pricingPlans = [
+    {
+        title: "beginners",
+        price: 39,
+        programs: ["free hand", "gym fitness", "weight loss", "personal trainer", "cycling"],
+        img_url: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+        title: "advanced",
+        price: 65,
+        programs: ["free hand", "gym fitness", "weight loss", "personal trainer", "cycling"],
+        img_url: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+        title: "pro",
+        price: 65,
+        programs: ["free hand", "gym fitness", "weight loss", "personal trainer", "cycling"],
+        img_url: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    },
+]

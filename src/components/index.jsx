@@ -8,6 +8,11 @@ import GalleryC from "./GalleryC"
 import PageButton from "./PageButton"
 import WeekButton from "./WeekButton"
 import ScheduleCard from "./ScheduleCard"
+import BlogCard from "./BlogCard"
+import UnderlinedHeading from "./UnderlinedHeading"
+import RecentPostCard from "./RecentPostCard"
+import MarkerHeading from "./MarkerHeading"
+import PricePlanCard from "./PricePlanCard"
 
 export {
   Navbar,
@@ -20,4 +25,9 @@ export {
   PageButton,
   WeekButton,
   ScheduleCard,
+  BlogCard,
+  UnderlinedHeading,
+  RecentPostCard,
+  MarkerHeading,
+  PricePlanCard,
 }

@@ -4,6 +4,7 @@
   --clr-black: #000000;
   --clr-border: #565656;
   --clr-border-1: #dee1e6;
+  --clr-border-2: #e6e7eb;
   --clr-primary-1: #ff0336;
   --clr-primary-7: #ffc3cf;
   --clr-font: #646464;
@@ -43,6 +44,18 @@ li {
   color: var(--clr-font);
   font-weight: 500;
   font-size: 0.9rem;
+}
+
+input {
+  border: 0;
+  font-family: inherit;
+  padding: 1em;
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+}
+
+input:focus {
+  outline: none;
 }
 
 .section-wrapper {
