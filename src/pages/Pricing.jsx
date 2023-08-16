@@ -46,10 +46,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    /* background: url("../public/kettlebell.png");
-    background-position: left top;
-    background-size: contain;
-    background-repeat: no-repeat; */
   }
   .price-card-container {
     display: flex;
@@ -79,7 +75,7 @@ const Wrapper = styled.div`
 
   .dumbbell-img {
     left: 20px;
-    top: 300px;
+    top: 430px;
   }
 
   .kettlebell-img {

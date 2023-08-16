@@ -1,14 +1,16 @@
 import styled from "styled-components"
 import { BsArrowRightShort } from "react-icons/bs"
-const ButtonUniq = ({ text }) => {
+const ButtonUniq = ({ text, css_class }) => {
   return (
     <Wrapper>
-      <div className="button-wrapper">
-        <div className="button-out">
-          {text || "no text"} <BsArrowRightShort className="arrow-icon" />
+      <div className={`button-wrapper ${css_class}`}>
+        <div className={`button-out ${css_class}`}>
+          {text || "no text"}{" "}
+          <BsArrowRightShort className={`arrow-icon ${css_class}`} />
         </div>
-        <button className="button-uniq">
-          {text || "no text"} <BsArrowRightShort className="arrow-icon" />
+        <button className={`button-uniq ${css_class}`}>
+          {text || "no text"}{" "}
+          <BsArrowRightShort className={`arrow-icon ${css_class}`} />
         </button>
       </div>
     </Wrapper>
@@ -38,7 +40,7 @@ const Wrapper = styled.div`
   .button-out {
     padding: 0em 1.8em;
     height: 53px;
-    color: white;
+    color: transparent;
     position: absolute;
     transform: translate(12px, -12px);
     border: 2px solid var(--clr-primary-7);
@@ -58,5 +60,23 @@ const Wrapper = styled.div`
 
   .arrow-icon {
     font-size: 2rem;
+  }
+
+  /* white button uniq */
+  .button-uniq.white {
+    background-color: white;
+    color: black;
+  }
+
+  .arrow-icon.white {
+    color: var(--clr-primary-1);
+  }
+
+  .button-out.white {
+    border: 1px solid var(--clr-border-3);
+  }
+
+  .button-wrapper.white:hover .button-out {
+    border: 2px solid white;
   }
 `

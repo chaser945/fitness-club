@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-const UnderlinedHeading = ({ heading, font_size }) => {
+const UnderlinedHeading = ({ heading, font_size, css_class }) => {
   return (
     <Wrapper>
       <div className="underlined-heading">
-        <h1 className="heading" style={{ fontSize: font_size }}>
+        <h1 className={`heading ${css_class}`} style={{ fontSize: font_size }}>
           {heading || "no text"}
         </h1>
         <div className="underline"></div>
@@ -25,5 +25,10 @@ const Wrapper = styled.div`
     height: 4px;
     width: 65px;
     background-color: var(--clr-primary-1);
+  }
+
+  //white heading
+  .heading.white {
+    color: white;
   }
 `

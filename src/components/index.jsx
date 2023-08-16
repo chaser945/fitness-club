@@ -13,6 +13,7 @@ import UnderlinedHeading from "./UnderlinedHeading"
 import RecentPostCard from "./RecentPostCard"
 import MarkerHeading from "./MarkerHeading"
 import PricePlanCard from "./PricePlanCard"
+import ExerciseClassCard from "./ExerciseClassCard"
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   RecentPostCard,
   MarkerHeading,
   PricePlanCard,
+  ExerciseClassCard,
 }
