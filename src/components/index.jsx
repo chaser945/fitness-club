@@ -14,6 +14,7 @@ import RecentPostCard from "./RecentPostCard"
 import MarkerHeading from "./MarkerHeading"
 import PricePlanCard from "./PricePlanCard"
 import ExerciseClassCard from "./ExerciseClassCard"
+import SocialIcons from "./SocialIcons"
 
 export {
   Navbar,
@@ -32,4 +33,5 @@ export {
   MarkerHeading,
   PricePlanCard,
   ExerciseClassCard,
+  SocialIcons,
 }

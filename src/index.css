@@ -56,6 +56,10 @@ input {
   letter-spacing: 1px;
 }
 
+textarea {
+  font-family: inherit;
+}
+
 input:focus {
   outline: none;
 }
