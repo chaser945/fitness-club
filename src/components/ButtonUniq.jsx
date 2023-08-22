@@ -1,14 +1,25 @@
 import styled from "styled-components"
 import { BsArrowRightShort } from "react-icons/bs"
+import { useState, useRef } from "react"
+import { useLayoutEffect } from "react"
+
 const ButtonUniq = ({ text, css_class }) => {
+  const outlineRef = useRef(null)
+  const [outlineWidth, setOutlineWidth] = useState(0)
+  const [outlineHeight, setOutlineHeight] = useState(0)
+
+  useLayoutEffect(() => {
+    setOutlineWidth(outlineRef.current.offsetWidth)
+    setOutlineHeight(outlineRef.current.offsetHeight)
+  }, [])
   return (
     <Wrapper>
       <div className={`button-wrapper ${css_class}`}>
-        <div className={`button-out ${css_class}`}>
-          {text || "no text"}{" "}
-          <BsArrowRightShort className={`arrow-icon ${css_class}`} />
-        </div>
-        <button className={`button-uniq ${css_class}`}>
+        <div
+          className={`button-out ${css_class}`}
+          style={{ width: outlineWidth, height: outlineHeight }}
+        ></div>
+        <button className={`button-uniq ${css_class}`} ref={outlineRef}>
           {text || "no text"}{" "}
           <BsArrowRightShort className={`arrow-icon ${css_class}`} />
         </button>
@@ -38,11 +49,9 @@ const Wrapper = styled.div`
   }
 
   .button-out {
-    padding: 0em 1.8em;
-    height: 53px;
     color: transparent;
     position: absolute;
-    transform: translate(12px, -12px);
+    transform: translate(9px, -9px);
     border: 2px solid var(--clr-primary-7);
     z-index: 1;
     transition: all linear 0.2s;

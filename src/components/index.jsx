@@ -15,7 +15,7 @@ import MarkerHeading from "./MarkerHeading"
 import PricePlanCard from "./PricePlanCard"
 import ExerciseClassCard from "./ExerciseClassCard"
 import SocialIcons from "./SocialIcons"
-
+import TourCard from "./TourCard"
 export {
   Navbar,
   Sidebar,
@@ -34,4 +34,5 @@ export {
   PricePlanCard,
   ExerciseClassCard,
   SocialIcons,
+  TourCard,
 }

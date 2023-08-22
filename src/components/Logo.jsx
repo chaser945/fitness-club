@@ -1,13 +1,15 @@
 import styled from "styled-components"
-import { CgGym } from "react-icons/cg"
 import { Link } from "react-router-dom"
+import dumbbellIcon from "../assets/images/flat-icons/dumbbell_flat.png"
+// import { CgGym } from "react-icons/cg"
 
 const Logo = ({ headingColor, textColor }) => {
   return (
     <Wrapper>
       <Link>
         <div className="logo-wrapper">
-          <CgGym className="logo-icon" />
+          {/* <CgGym className="logo-icon" /> */}
+          <img src={dumbbellIcon} alt="dumbbell icon" className="logo-icon" />
           <div className="logo-content">
             <h2 className="logo-heading" style={{ color: headingColor }}>
               Fitness Club
@@ -27,11 +29,13 @@ const Wrapper = styled.div`
   .logo-wrapper {
     display: flex;
     color: white;
+    gap: 0.5em;
   }
 
   .logo-icon {
-    font-size: 3rem;
-    color: var(--clr-primary-1);
+    width: 45px;
+    /* font-size: 3rem;
+    color: var(--clr-primary-1); */
   }
 
   .logo-heading,
