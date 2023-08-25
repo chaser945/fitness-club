@@ -2,10 +2,10 @@ import styled from "styled-components"
 import { MarkerHeading, PageHero, PricePlanCard } from "../components"
 import { pricingPlans } from "../utils"
 
-const Pricing = () => {
+const Pricing = ({ hideHero }) => {
   return (
     <Wrapper>
-      <PageHero heading="pricing" />
+      {hideHero ? null : <PageHero heading="pricing" />}
       <img
         src="../public/dumbbell.png"
         alt="dumbell"

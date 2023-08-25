@@ -36,7 +36,7 @@ const HomeChoose = () => {
       </div>
       <div className="choose-wrapper">
         {/* body */}
-        <div className="body">
+        <div className="body section-wrapper">
           <div className="body-img-wrapper">
             <div className="red-bar first"></div>
             <img
@@ -84,9 +84,6 @@ const HomeChoose = () => {
 export default HomeChoose
 
 const Wrapper = styled.div`
-  .choose-wrapper {
-    background-color: var(--clr-black-1);
-  }
   .header-wrapper {
     background-image: url("https://images.unsplash.com/photo-1581095146373-cd331553812f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fHJlZCUyMGd5bXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
   }
@@ -102,9 +99,13 @@ const Wrapper = styled.div`
     text-transform: capitalize;
     font-size: 1.5rem;
   }
+  .choose-wrapper {
+    background-color: var(--clr-black-1);
+  }
   .body-img-wrapper {
+    padding-top: 5em;
     width: 80%;
-    margin: 3em auto 0em;
+    margin: 0em auto 0em;
     transform: rotate(-10deg);
     display: flex;
     gap: 1em;
@@ -144,7 +145,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     justify-content: center;
     align-items: center;
   }
@@ -170,11 +171,36 @@ const Wrapper = styled.div`
     color: white;
   }
 
-  @media (min-width: 1118px) {
+  @media (min-width: 548px) {
+    .facilities-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 3em;
+      padding-top: 2em;
+    }
+  }
+  @media (min-width: 1000px) {
     .header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding: 4em 2em;
+    }
+    .header-title {
+      font-size: 2rem;
+    }
+    .body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .content {
+      text-align: left;
+    }
+    .facilities-wrapper {
+      margin: 0;
     }
   }
 `

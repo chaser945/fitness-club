@@ -4,10 +4,12 @@ import {
   HomeChoose,
   HomeFeatured,
   HomeHero,
+  HomeNews,
   HomeTestimonials,
   HomeTour,
   HomeTrainers,
 } from "./HomeCompos"
+import Pricing from "./Pricing"
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <HomeTrainers />
       <HomeTestimonials />
       <HomeChoose />
+      <Pricing hideHero={true} />
+      <HomeNews />
     </Wrapper>
   )
 }
