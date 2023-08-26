@@ -3,7 +3,7 @@ import { MarkerHeading } from "../../components"
 import coach1 from "../../assets/images/coach1.png"
 import coach2 from "../../assets/images/coach2.png"
 import coach3 from "../../assets/images/coach3.png"
-import redBg from "../../assets/images/red-marker-bg.png"
+import redBg from "../../assets/images/Red-marker-bg.png"
 import dumbbellLogo from "../../assets/images/flat-icons/dumbbell_logo.png"
 // importing social icons
 import { FaFacebookF } from "react-icons/fa"
