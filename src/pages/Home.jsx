@@ -1,7 +1,9 @@
 import styled from "styled-components"
+import GalleryPage1 from "./GalleryPage1"
 import {
   HomeBMI,
   HomeChoose,
+  HomeContact,
   HomeFeatured,
   HomeHero,
   HomeNews,
@@ -23,6 +25,7 @@ const Home = () => {
       <HomeChoose />
       <Pricing hideHero={true} />
       <HomeNews />
+      <HomeContact />
     </Wrapper>
   )
 }

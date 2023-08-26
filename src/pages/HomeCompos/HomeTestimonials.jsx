@@ -81,7 +81,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
   }
   .comment-border {
     border: 10px solid var(--clr-border-1);
@@ -172,7 +172,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 795px) {
     .testimonials-wrapper {
-      gap: 8em;
+      gap: 4em;
     }
     .comment-border {
       width: 100%;
