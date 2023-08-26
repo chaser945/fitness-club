@@ -44,12 +44,21 @@ const Wrapper = styled.div`
   }
 
   .logo-heading {
-    font-size: 1.5;
+    font-size: 1.5rem;
   }
   .logo-text {
     text-transform: uppercase;
     font-size: 0.6rem;
     letter-spacing: 2px;
     color: white;
+  }
+
+  @media (max-width: 400px) {
+    .logo-heading {
+      font-size: 1.1rem;
+    }
+    .logo-text {
+      /* text-align: center; */
+    }
   }
 `
