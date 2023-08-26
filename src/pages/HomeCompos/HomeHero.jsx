@@ -62,9 +62,11 @@ const Wrapper = styled.div`
   }
   .hero.blur {
     filter: blur(20px);
+    background-color: rgba(0, 0, 0, 1);
   }
   .hero.focus {
     filter: blur(0);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .hero-content {
     text-align: center;
