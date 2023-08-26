@@ -72,6 +72,8 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 3em;
     margin-top: -6em;
+    position: relative;
+    z-index: 3;
   }
   .tour-content {
     text-align: center;
