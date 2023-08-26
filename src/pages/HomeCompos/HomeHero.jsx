@@ -4,10 +4,25 @@ import { FaLinkedinIn } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaFacebookF } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
+import boxingTinyImg from "../../assets/images/hero_box_tiny.jpg"
+
 const HomeHero = () => {
+  const [bgUrl, setBgUrl] = useState(boxingTinyImg)
+  useEffect(() => {
+    const img = new Image()
+    img.src =
+      "https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"
+    img.onload = () => {
+      setBgUrl(img.src)
+    }
+  }, [])
   return (
     <Wrapper>
-      <section className="hero">
+      <section
+        className={`hero ${bgUrl === boxingTinyImg ? "blur" : "focus"}`}
+        style={{ backgroundImage: `url(${bgUrl})` }}
+      >
         <div className="hero-content">
           <MarkerHeading heading="find your energy" />
           <h1 className="hero-title">
@@ -35,7 +50,7 @@ const Wrapper = styled.div`
   .hero {
     height: 100vh;
     background-size: cover;
-    background-image: url("https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"); */
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     display: flex;
@@ -43,6 +58,13 @@ const Wrapper = styled.div`
     justify-content: center;
     padding: 2em;
     color: white;
+    transition: all linear 0.2s;
+  }
+  .hero.blur {
+    filter: blur(20px);
+  }
+  .hero.focus {
+    filter: blur(0);
   }
   .hero-content {
     text-align: center;

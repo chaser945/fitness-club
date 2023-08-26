@@ -1,10 +1,23 @@
+import { useState, useEffect } from "react"
 import styled from "styled-components"
-import banner from "../assets/images/gym-banner.jpg"
+import bannerBig from "../assets/images/gym-banner.jpg"
+import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
 
 const PageHero = ({ heading }) => {
+  const [bannerUrl, setBannerUrl] = useState(bannerTiny)
+  useEffect(() => {
+    const img = new Image()
+    img.src = bannerBig
+    img.onload = () => {
+      setBannerUrl(bannerBig)
+    }
+  }, [])
   return (
     <Wrapper>
-      <div className="hero" style={{ backgroundImage: `url(${banner})` }}>
+      <div
+        className={`hero ${bannerUrl === bannerTiny ? "blur" : "focus"}`}
+        style={{ backgroundImage: `url(${bannerUrl})` }}
+      >
         <h1 className="heading">{heading}</h1>
       </div>
     </Wrapper>
@@ -20,6 +33,13 @@ const Wrapper = styled.div`
     justify-content: center;
     background-position: center center;
     background-size: cover;
+    transition: all linear 0.2s;
+  }
+  .hero.blur {
+    filter: blur(50px);
+  }
+  .hero.focus {
+    filter: blur(0);
   }
 
   .heading {

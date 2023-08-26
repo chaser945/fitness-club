@@ -16,6 +16,7 @@ import PricePlanCard from "./PricePlanCard"
 import ExerciseClassCard from "./ExerciseClassCard"
 import SocialIcons from "./SocialIcons"
 import TourCard from "./TourCard"
+import ProgressiveImg from "./ProgressiveImg"
 export {
   Navbar,
   Sidebar,
@@ -35,4 +36,5 @@ export {
   ExerciseClassCard,
   SocialIcons,
   TourCard,
+  ProgressiveImg,
 }
