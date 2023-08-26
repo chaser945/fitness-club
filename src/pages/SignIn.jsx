@@ -1,7 +1,11 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 import { PageHero, RegForm } from "../components"
 
 const SignIn = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <PageHero heading="sign in" />

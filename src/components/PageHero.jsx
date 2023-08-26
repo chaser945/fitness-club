@@ -4,15 +4,15 @@ import bannerBig from "../assets/images/gym-banner.jpg"
 import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
 
 const PageHero = ({ heading }) => {
-  const [bannerUrl, setBannerUrl] = useState(bannerTiny)
-  useEffect(() => {
-    const img = new Image()
-    img.src = bannerBig
-    img.onload = () => {
-      setBannerUrl(bannerBig)
-    }
-    console.log(img)
-  }, [])
+  const [bannerUrl, setBannerUrl] = useState(bannerBig)
+  // useEffect(() => {
+  //   const img = new Image()
+  //   img.src = bannerBig
+  //   img.onload = () => {
+  //     setBannerUrl(bannerBig)
+  //   }
+  //   console.log(img)
+  // }, [])
   return (
     <Wrapper>
       <div
