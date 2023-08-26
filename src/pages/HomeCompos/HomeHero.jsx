@@ -3,6 +3,7 @@ import { MarkerHeading, ButtonUniq } from "../../components"
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaFacebookF } from "react-icons/fa"
+import { Link } from "react-router-dom"
 const HomeHero = () => {
   return (
     <Wrapper>
@@ -13,7 +14,9 @@ const HomeHero = () => {
             make your body <br />
             <span className="light-title"> fit & perfect </span>
           </h1>
-          <ButtonUniq text="our classes" css_class="white" />
+          <Link to="classes">
+            <ButtonUniq text="our classes" css_class="white" />
+          </Link>
         </div>
         <div className="hero-social">
           <h4 className="share-text">share</h4>

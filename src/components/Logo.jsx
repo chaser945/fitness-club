@@ -6,7 +6,7 @@ import dumbbellIcon from "../assets/images/flat-icons/dumbbell_flat.png"
 const Logo = ({ headingColor, textColor }) => {
   return (
     <Wrapper>
-      <Link>
+      <Link to="/">
         <div className="logo-wrapper">
           {/* <CgGym className="logo-icon" /> */}
           <img src={dumbbellIcon} alt="dumbbell icon" className="logo-icon" />

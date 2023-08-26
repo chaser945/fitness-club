@@ -1,5 +1,5 @@
 import { navBarLinks } from "../utils"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import styled from "styled-components"
 import { useDispatch } from "react-redux"
 import { closeSidebar } from "../features/appSlice/appSlice"
@@ -14,14 +14,14 @@ const NavbarLinks = () => {
       <div className="navbar-links">
         {navBarLinks.map((c, i) => {
           return (
-            <Link
+            <NavLink
               to={`${c.path}`}
               key={i}
               className="nav-link"
               onClick={handleClick}
             >
               {c.name}
-            </Link>
+            </NavLink>
           )
         })}
       </div>

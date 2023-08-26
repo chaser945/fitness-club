@@ -3,6 +3,7 @@ import UnderlinedHeading from "./UnderlinedHeading"
 import { BsPersonFill } from "react-icons/bs"
 import { AiFillClockCircle } from "react-icons/ai"
 import ButtonUniq from "./ButtonUniq"
+import { Link } from "react-router-dom"
 
 const ExerciseClassCard = ({ data }) => {
   const { title, teacher, timing, img_url } = data
@@ -30,7 +31,9 @@ const ExerciseClassCard = ({ data }) => {
               {timing.charAt(0).toUpperCase() + timing.slice(1)}
             </p>
           </div>
-          <ButtonUniq text="join now" css_class="white" />
+          <Link to="/pricing">
+            <ButtonUniq text="join now" css_class="white" />
+          </Link>
         </div>
       </div>
     </Wrapper>

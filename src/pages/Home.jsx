@@ -1,5 +1,6 @@
+import { useEffect } from "react"
 import styled from "styled-components"
-import GalleryPage1 from "./GalleryPage1"
+// import GalleryPage1 from "./GalleryPage1"
 import {
   HomeBMI,
   HomeChoose,
@@ -14,6 +15,9 @@ import {
 import Pricing from "./Pricing"
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <HomeHero />

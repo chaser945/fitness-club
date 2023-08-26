@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import ButtonUniq from "./ButtonUniq"
 
@@ -22,7 +23,9 @@ const PricePlanCard = ({ data }) => {
               )
             })}
           </div>
-          <ButtonUniq text="purchase now" />
+          <Link to="/contact">
+            <ButtonUniq text="purchase now" />
+          </Link>
         </div>
       </div>
     </Wrapper>

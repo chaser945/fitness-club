@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import WeekButton from "./WeekButton"
 
@@ -19,11 +20,13 @@ const ScheduleCard = ({ data }) => {
           <h4 className="heading">trainer</h4>
           <h3 className="content">{trainer}</h3>
         </div>
-        <WeekButton
-          weekDay="join now"
-          clrBack="var(--clr-border)"
-          clrFont="white"
-        />
+        <Link to="/pricing">
+          <WeekButton
+            weekDay="join now"
+            clrBack="var(--clr-border)"
+            clrFont="white"
+          />
+        </Link>
       </div>
     </Wrapper>
   )

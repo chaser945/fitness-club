@@ -1,8 +1,12 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 import { MarkerHeading, PageHero, PricePlanCard } from "../components"
 import { pricingPlans } from "../utils"
 
 const Pricing = ({ hideHero }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       {hideHero ? null : <PageHero heading="pricing" />}

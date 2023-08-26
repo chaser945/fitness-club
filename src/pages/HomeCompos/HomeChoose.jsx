@@ -4,6 +4,7 @@ import bagIcon from "../../assets/images/facilities/bag-f.png"
 import bikeIcon from "../../assets/images/facilities/bike-f.png"
 import bottleIcon from "../../assets/images/facilities/bottle-f.png"
 import fitnessIcon from "../../assets/images/facilities/fitness-f.png"
+import { Link } from "react-router-dom"
 
 const HomeChoose = () => {
   const facilitiesData = [
@@ -31,7 +32,9 @@ const HomeChoose = () => {
           <h1 className="header-title">
             Providing best fitness services for you
           </h1>
-          <ButtonUniq text="join with us" />
+          <Link to="pricing">
+            <ButtonUniq text="join with us" />
+          </Link>
         </div>
       </div>
       <div className="choose-wrapper">
@@ -61,7 +64,7 @@ const HomeChoose = () => {
             <div className="facilities-wrapper">
               {facilitiesData.map((facility, index) => {
                 return (
-                  <div className="facility-card">
+                  <div className="facility-card" key={index}>
                     <div className="f-icon-wrapper">
                       <img
                         key={index}
@@ -74,7 +77,9 @@ const HomeChoose = () => {
                 )
               })}
             </div>
-            <ButtonUniq text="our classes" />
+            <Link to="classes">
+              <ButtonUniq text="our classes" />
+            </Link>
           </div>
         </div>
       </div>

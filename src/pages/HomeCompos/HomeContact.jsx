@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { ButtonUniq } from "../../components"
 
@@ -10,7 +11,9 @@ const HomeContact = () => {
           <h1 className="contact-call">
             <span className="red-t">Call:</span> +123-456789
           </h1>
-          <ButtonUniq text="purchase now" css_class="white" />
+          <Link to="pricing">
+            <ButtonUniq text="purchase now" css_class="white" />
+          </Link>
         </div>
       </div>
     </Wrapper>

@@ -8,6 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { useDispatch, useSelector } from "react-redux"
 import { toggleSidebar } from "../features/appSlice/appSlice"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 const Navbar = () => {
   const dispatch = useDispatch()
   const handleClick = () => {
@@ -28,10 +29,12 @@ const Navbar = () => {
           />
           <FaRegUser className="nav-button" />
           <BsListNested className="nav-button" />
-          <div className="join-class-wrapper">
-            <AiFillPlusSquare className="nav-button plus-button" />
-            <p className="join-class-text">join class now</p>
-          </div>
+          <Link to="/classes">
+            <div className="join-class-wrapper">
+              <AiFillPlusSquare className="nav-button plus-button" />
+              <p className="join-class-text">join class now</p>
+            </div>
+          </Link>
         </div>
       </div>
     </Wrapper>

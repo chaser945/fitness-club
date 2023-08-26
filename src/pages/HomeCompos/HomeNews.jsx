@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { ButtonUniq, MarkerHeading } from "../../components"
 import { blogList } from "../../utils"
@@ -25,7 +26,9 @@ const HomeNews = () => {
                   vulputate dignissim suspendisse in. Ut tristique et egestas
                   quis ipsum suspendisse.
                 </p>
-                <ButtonUniq text="read more" />
+                <Link to="blog">
+                  <ButtonUniq text="read more" />
+                </Link>
               </article>
             )
           })}

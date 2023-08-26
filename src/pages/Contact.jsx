@@ -1,8 +1,12 @@
+import { useEffect } from "react"
 import styled from "styled-components"
 import { PageHero, SocialIcons, UnderlinedHeading } from "../components"
 import { exerciseCategories } from "../utils"
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <PageHero heading="contact us" />
@@ -192,6 +196,7 @@ const Wrapper = styled.div`
     padding: 1em 2em;
     border: none;
     color: white;
+    cursor: pointer;
     text-transform: uppercase;
   }
 `

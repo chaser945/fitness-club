@@ -3,8 +3,13 @@ import { ButtonUniq, HistoryCard, PageHero } from "../components"
 import markerImg from "../assets/images/red-marker.svg"
 import { MdManageHistory } from "react-icons/md"
 import { GiAchievement } from "react-icons/gi"
+import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <section className="about-wrapper">
@@ -40,7 +45,9 @@ const About = () => {
               community fostering motivation, we are more than just a gym –
               we're your partner in achieving greatness.
             </p>
-            <ButtonUniq text="contact us" />
+            <Link to="/contact">
+              <ButtonUniq text="contact us" />
+            </Link>
           </div>
           <div className="about-us-images">
             <img

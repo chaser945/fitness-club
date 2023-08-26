@@ -5,6 +5,10 @@ import { useState } from "react"
 import { useEffect } from "react"
 
 const Classes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [shownClassesArr, setShownClassesArr] = useState([...exerciseClasses])
   const [showMore, setShowMore] = useState(true)
 

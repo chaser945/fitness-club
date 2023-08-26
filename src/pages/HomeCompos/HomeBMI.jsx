@@ -6,6 +6,7 @@ const HomeBMI = () => {
   const [height, setHeight] = useState("")
   const [bmi, setBmi] = useState("")
   const [resultWeight, setResultWeight] = useState("")
+  const [showAlert, setShowAlert] = useState(false)
 
   useEffect(() => {
     if (bmi <= 18.4) {
@@ -21,6 +22,12 @@ const HomeBMI = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setShowAlert(false)
+
+    if (isNaN(queryWeight) || isNaN(height)) {
+      setShowAlert(true)
+      return
+    }
     const heightInMeters = height / 3.28
     const bmi = (queryWeight / heightInMeters ** 2).toFixed(2)
     setBmi(bmi)
@@ -50,6 +57,7 @@ const HomeBMI = () => {
               placeholder="Weight / kg"
               value={queryWeight}
               onChange={handleWeight}
+              required
             />
             <input
               className="bmi-input"
@@ -57,7 +65,15 @@ const HomeBMI = () => {
               placeholder="Height / feet"
               value={height}
               onChange={handleHeight}
+              required
             />
+            {showAlert && (
+              <p className="result">
+                Please! provide input in{" "}
+                <span className="result-red">numbers</span>{" "}
+              </p>
+            )}
+            {showAlert && <p className="result"></p>}
             {bmi && (
               <p className="result">
                 Your BMI is <span className="result-red">{bmi}</span>{" "}

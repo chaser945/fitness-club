@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { PageHero } from "../components"
 import { Outlet } from "react-router-dom"
+// import { useEffect } from "react"
 const Gallery = () => {
   return (
     <Wrapper>

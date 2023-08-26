@@ -5,6 +5,7 @@ import trainerIcon from "../../assets/images/flat-icons/fitness.png"
 import equipmentIcon from "../../assets/images/flat-icons/weights.png"
 import exerciseIcon from "../../assets/images/flat-icons/exercise.png"
 import runningIcon from "../../assets/images/flat-icons/running.png"
+import { Link } from "react-router-dom"
 const HomeTour = () => {
   const iconsData = [
     {
@@ -48,7 +49,9 @@ const HomeTour = () => {
                 )
               })}
             </div>
-            <ButtonUniq text="take a tour" />
+            <Link to="about">
+              <ButtonUniq text="take a tour" />
+            </Link>
           </div>
           <img src={runningIcon} alt="running foot" className="running-icon" />
         </div>

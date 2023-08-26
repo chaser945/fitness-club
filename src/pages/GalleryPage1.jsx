@@ -3,10 +3,13 @@ import styled from "styled-components"
 import { GalleryC, PageButton } from "../components"
 import { MdNavigateNext } from "react-icons/md"
 import { Link } from "react-router-dom"
-
+import { useEffect } from "react"
 const GalleryPage1 = () => {
   const { galleryData } = useSelector((store) => store.appSlice)
   //   console.log(galleryData)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <div className="gallery-page-1 section-wrapper">

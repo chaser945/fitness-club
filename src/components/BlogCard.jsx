@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { GoStack } from "react-icons/go"
 import ButtonUniq from "./ButtonUniq"
+import { Link } from "react-router-dom"
 
 const BlogCard = ({ data }) => {
   const {
@@ -27,7 +28,9 @@ const BlogCard = ({ data }) => {
           {text ||
             "Libero enim sed faucibus turpis in eu. Risus pretium quam vulputate dignissim suspendisse in. Ut tristique et egestas quis ipsum suspendisse. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant."}
         </p>
-        <ButtonUniq text="purchase now" />
+        <Link to="/pricing">
+          <ButtonUniq text="purchase now" />
+        </Link>
       </div>
     </Wrapper>
   )

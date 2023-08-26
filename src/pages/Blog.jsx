@@ -13,8 +13,12 @@ import {
 } from "../utils"
 import { FaSearch } from "react-icons/fa"
 import { LiaHandPointRight } from "react-icons/lia"
+import { useEffect } from "react"
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <PageHero />

@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import styled from "styled-components"
 import { PageHero, ScheduleCard, WeekButton } from "../components"
@@ -5,6 +6,9 @@ import { classScheduleData, weekDays } from "../utils"
 
 const Schedule = () => {
   const { day } = useParams()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <PageHero heading="schedule by day" />
