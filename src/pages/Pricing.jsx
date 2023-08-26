@@ -11,12 +11,12 @@ const Pricing = ({ hideHero }) => {
     <Wrapper>
       {hideHero ? null : <PageHero heading="pricing" />}
       <img
-        src="../public/dumbbell.png"
+        src="/dumbbell.png"
         alt="dumbell"
         className="back-img dumbbell-img"
       />
       <img
-        src="../public/kettlebell.png"
+        src="/kettlebell.png"
         alt="kettlebell"
         className="back-img kettlebell-img"
       />
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
 
   .dumbbell-img {
     left: 20px;
-    top: 430px;
+    top: 300px;
   }
 
   .kettlebell-img {

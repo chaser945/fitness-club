@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import { Footer, Navbar, Sidebar } from "./components"
 import { useEffect, useState } from "react"
+import { useDispatch } from "react-redux"
 import {
   About,
   Blog,
@@ -12,8 +13,10 @@ import {
   Home,
   Pricing,
   Schedule,
+  SignIn,
+  SignUp,
 } from "./pages"
-import { useDispatch } from "react-redux"
+
 import {
   setNavbarBlack,
   setNavbarTransparent,
@@ -60,6 +63,8 @@ const App = () => {
         <Route path="contact" element={<Contact />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="classes" element={<Classes />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="login" element={<SignIn />} />
       </Routes>
       <Footer />
     </div>

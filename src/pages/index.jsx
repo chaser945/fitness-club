@@ -8,7 +8,8 @@ import Classes from "./Classes"
 import Contact from "./Contact"
 import GalleryPage1 from "./GalleryPage1"
 import GalleryPage2 from "./GalleryPage2"
-
+import SignUp from "./SignUp"
+import SignIn from "./SignIn"
 export {
   Home,
   About,
@@ -20,4 +21,6 @@ export {
   Contact,
   GalleryPage1,
   GalleryPage2,
+  SignUp,
+  SignIn,
 }

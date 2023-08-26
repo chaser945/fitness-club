@@ -11,6 +11,7 @@ const PageHero = ({ heading }) => {
     img.onload = () => {
       setBannerUrl(bannerBig)
     }
+    console.log(img)
   }, [])
   return (
     <Wrapper>

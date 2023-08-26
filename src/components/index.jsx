@@ -17,6 +17,7 @@ import ExerciseClassCard from "./ExerciseClassCard"
 import SocialIcons from "./SocialIcons"
 import TourCard from "./TourCard"
 import ProgressiveImg from "./ProgressiveImg"
+import RegForm from "./RegForm"
 export {
   Navbar,
   Sidebar,
@@ -37,4 +38,5 @@ export {
   SocialIcons,
   TourCard,
   ProgressiveImg,
+  RegForm,
 }

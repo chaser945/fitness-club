@@ -27,7 +27,9 @@ const Navbar = () => {
             className="nav-button hamburger"
             onClick={handleClick}
           />
-          <FaRegUser className="nav-button" />
+          <Link to="/sign-up">
+            <FaRegUser className="nav-button" />
+          </Link>
           <BsListNested className="nav-button" />
           <Link to="/classes">
             <div className="join-class-wrapper">
