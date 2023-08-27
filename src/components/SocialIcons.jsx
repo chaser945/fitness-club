@@ -8,10 +8,18 @@ const SocialIcons = () => {
   return (
     <Wrapper>
       <div className="social-wrapper">
-        <AiFillFacebook className="social-icon" />
-        <AiFillTwitterSquare className="social-icon" />
-        <FaPinterestSquare className="social-icon" />
-        <AiFillYoutube className="social-icon" />
+        <a target="_blank" href="https://www.facebook.com/">
+          <AiFillFacebook className="social-icon" />
+        </a>
+        <a target="_blank" href="https://twitter.com/?lang=en">
+          <AiFillTwitterSquare className="social-icon" />
+        </a>
+        <a target="_blank" href="https://www.pinterest.com/">
+          <FaPinterestSquare className="social-icon" />
+        </a>
+        <a target="_blank" href="https://www.youtube.com/">
+          <AiFillYoutube className="social-icon" />
+        </a>
       </div>
     </Wrapper>
   )

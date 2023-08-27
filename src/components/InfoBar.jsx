@@ -76,15 +76,27 @@ const InfoBar = () => {
         <section className="follow">
           <h2 className="follow-h1">follow us</h2>
           <div className="follow-icons-wrapper">
-            <span className="icon-wrapper">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              className="icon-wrapper"
+            >
               <FaFacebookF className="social-icon" />
-            </span>
-            <span className="icon-wrapper">
+            </a>
+            <a
+              href="https://twitter.com/?lang=en"
+              target="_blank"
+              className="icon-wrapper"
+            >
               <FaTwitter className="social-icon" />
-            </span>
-            <span className="icon-wrapper">
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              className="icon-wrapper"
+            >
               <FaInstagram className="social-icon" />
-            </span>
+            </a>
           </div>
         </section>
       </div>

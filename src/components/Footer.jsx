@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="sign">
-        <GrCode className="code-sign" /> coded by Junaid.
+        <GrCode className="code-sign" /> coded by Junaid Iqbal.
       </p>
     </Wrapper>
   )
