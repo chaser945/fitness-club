@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 import styled from "styled-components"
 import bannerBig from "../assets/images/gym-banner.jpg"
-import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
+// import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
 
 const PageHero = ({ heading }) => {
-  const [bannerUrl, setBannerUrl] = useState(bannerBig)
+  // const [bannerUrl, setBannerUrl] = useState(bannerBig)
   // useEffect(() => {
   //   const img = new Image()
   //   img.src = bannerBig
@@ -15,10 +15,7 @@ const PageHero = ({ heading }) => {
   // }, [])
   return (
     <Wrapper>
-      <div
-        className={`hero ${bannerUrl === bannerTiny ? "blur" : "focus"}`}
-        style={{ backgroundImage: `url(${bannerUrl})` }}
-      >
+      <div className={`hero`} style={{ backgroundImage: `url(${bannerBig})` }}>
         <h1 className="heading">{heading}</h1>
       </div>
     </Wrapper>

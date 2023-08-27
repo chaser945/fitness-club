@@ -21,7 +21,7 @@ const Blog = () => {
   }, [])
   return (
     <Wrapper>
-      <PageHero />
+      <PageHero heading="blog" />
       <div className="blogs section-wrapper">
         <div className="blog-wrapper">
           {blogList.map((blog, index) => {

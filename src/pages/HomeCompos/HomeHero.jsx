@@ -8,9 +8,9 @@ import { useState, useEffect } from "react"
 import boxingTinyImg from "../../assets/images/hero_box_tiny.jpg"
 
 const HomeHero = () => {
-  const [bgUrl, setBgUrl] = useState(
-    "https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"
-  )
+  // const [bgUrl, setBgUrl] = useState(
+  //   "https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"
+  // )
   // useEffect(() => {
   //   const img = new Image()
   //   img.src =
@@ -22,8 +22,10 @@ const HomeHero = () => {
   return (
     <Wrapper>
       <section
-        className={`hero ${bgUrl === boxingTinyImg ? "blur" : "focus"}`}
-        style={{ backgroundImage: `url(${bgUrl})` }}
+        className={`hero`}
+        style={{
+          backgroundImage: `url(${"https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"})`,
+        }}
       >
         <div className="hero-content">
           <MarkerHeading heading="find your energy" />

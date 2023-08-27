@@ -43,9 +43,10 @@ const InfoBar = () => {
         <section className="gallery">
           <h2 className="gallery-h1">gallery</h2>
           <div className="gallery-img-wrapper">
-            {galleryImages[0].slice(0, 6).map((galleryImg) => {
+            {galleryImages[0].slice(0, 6).map((galleryImg, index) => {
               return (
                 <img
+                  key={index}
                   src={galleryImg.url}
                   alt="person in gym"
                   className="gallery-img"
