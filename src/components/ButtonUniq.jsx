@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { BsArrowRightShort } from "react-icons/bs"
 import { useState, useRef } from "react"
-import { useLayoutEffect } from "react"
+import { useEffect } from "react"
 
 const ButtonUniq = ({ text, css_class }) => {
   const outlineRef = useRef(null)
