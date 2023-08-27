@@ -6,7 +6,7 @@ import { BsListNested } from "react-icons/bs"
 import { AiFillPlusSquare } from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { useDispatch, useSelector } from "react-redux"
-import { toggleSidebar } from "../features/appSlice/appSlice"
+import { toggleInfoBar, toggleSidebar } from "../features/appSlice/appSlice"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 const Navbar = () => {
@@ -30,7 +30,10 @@ const Navbar = () => {
           <Link to="/sign-up">
             <FaRegUser className="nav-button" />
           </Link>
-          <BsListNested className="nav-button" />
+          <BsListNested
+            className="nav-button"
+            onClick={() => dispatch(toggleInfoBar())}
+          />
           <Link to="/classes">
             <div className="join-class-wrapper">
               <AiFillPlusSquare className="nav-button plus-button" />

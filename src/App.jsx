@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom"
-import { Footer, Navbar, Sidebar } from "./components"
+import { Footer, InfoBar, Navbar, Sidebar } from "./components"
 import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux"
 import {
@@ -51,6 +51,7 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Sidebar />
+      <InfoBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

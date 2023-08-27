@@ -21,10 +21,8 @@ const ExerciseClassCard = ({ data }) => {
           />
           <div className="content">
             <p className="teacher">
-              <span>
-                <BsPersonFill className="icons" />
-              </span>
-              <span>{teacher}</span>
+              <BsPersonFill className="icons" />
+              {teacher}
             </p>
             <p className="timings">
               <AiFillClockCircle className="icons" />{" "}
@@ -48,7 +46,7 @@ const Wrapper = styled.div`
     background-position: center center;
     background-size: cover;
     height: 400px;
-    padding: 3em;
+    padding: 1.5em;
     display: flex;
     align-items: flex-end;
     border-radius: 15px;
@@ -60,7 +58,7 @@ const Wrapper = styled.div`
 
   .content {
     display: flex;
-    gap: 1em;
+    gap: 1.3em;
     align-items: center;
   }
 
@@ -69,7 +67,7 @@ const Wrapper = styled.div`
     color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;f
+    align-items: center;
     justify-content: center;
     gap: 0.2em;
     /* margin: 0; */
@@ -78,5 +76,6 @@ const Wrapper = styled.div`
     text-transform: capitalize;
   }
   .icons {
+    /* color: var(--clr-primary-1); */
   }
 `

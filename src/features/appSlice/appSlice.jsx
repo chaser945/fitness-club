@@ -6,6 +6,7 @@ const initialState = {
   showButtonOut: true,
   showNavbarTransparent: true,
   galleryData: galleryImages,
+  showInfoBar: false,
 }
 
 export const appSlice = createSlice({
@@ -30,6 +31,9 @@ export const appSlice = createSlice({
     setNavbarTransparent: (state) => {
       state.showNavbarTransparent = true
     },
+    toggleInfoBar: (state) => {
+      state.showInfoBar = !state.showInfoBar
+    },
   },
 })
 
@@ -40,5 +44,6 @@ export const {
   openButtonOut,
   setNavbarBlack,
   setNavbarTransparent,
+  toggleInfoBar,
 } = appSlice.actions
 export default appSlice.reducer

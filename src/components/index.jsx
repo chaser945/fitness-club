@@ -18,6 +18,7 @@ import SocialIcons from "./SocialIcons"
 import TourCard from "./TourCard"
 import ProgressiveImg from "./ProgressiveImg"
 import RegForm from "./RegForm"
+import InfoBar from "./InfoBar"
 export {
   Navbar,
   Sidebar,
@@ -39,4 +40,5 @@ export {
   TourCard,
   ProgressiveImg,
   RegForm,
+  InfoBar,
 }
