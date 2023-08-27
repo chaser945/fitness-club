@@ -8,10 +8,10 @@ const ButtonUniq = ({ text, css_class }) => {
   const [outlineWidth, setOutlineWidth] = useState(0)
   const [outlineHeight, setOutlineHeight] = useState(0)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setOutlineWidth(outlineRef.current.offsetWidth)
     setOutlineHeight(outlineRef.current.offsetHeight)
-  }, [])
+  }, [outlineRef])
   return (
     <Wrapper>
       <div className={`button-wrapper ${css_class}`}>
