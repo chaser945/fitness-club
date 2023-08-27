@@ -8,21 +8,17 @@ import { useState, useEffect } from "react"
 import boxingTinyImg from "../../assets/images/hero_box_tiny.jpg"
 
 const HomeHero = () => {
-  // const [bgUrl, setBgUrl] = useState(
-  //   "https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"
-  // )
-  // useEffect(() => {
-  //   const img = new Image()
-  //   img.src =
-  //     "https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"
-  //   img.onload = () => {
-  //     setBgUrl(img.src)
-  //   }
-  // }, [])
+  const [customClass, setCustomClass] = useState("blur")
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setCustomClass("focus")
+    }, 100)
+    return () => clearTimeout(timeoutId)
+  }, [])
   return (
     <Wrapper>
       <section
-        className={`hero`}
+        className={`hero ${customClass}`}
         style={{
           backgroundImage: `url(${"https://images.unsplash.com/photo-1606335543042-57c525922933?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80"})`,
         }}

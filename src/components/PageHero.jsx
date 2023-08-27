@@ -1,21 +1,22 @@
-// import { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import styled from "styled-components"
 import bannerBig from "../assets/images/gym-banner.jpg"
 // import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
 
 const PageHero = ({ heading }) => {
-  // const [bannerUrl, setBannerUrl] = useState(bannerBig)
-  // useEffect(() => {
-  //   const img = new Image()
-  //   img.src = bannerBig
-  //   img.onload = () => {
-  //     setBannerUrl(bannerBig)
-  //   }
-  //   console.log(img)
-  // }, [])
+  const [customClass, setCustomClass] = useState("blur")
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setCustomClass("focus")
+    }, 100)
+    return () => clearTimeout(timeoutId)
+  }, [])
   return (
     <Wrapper>
-      <div className={`hero`} style={{ backgroundImage: `url(${bannerBig})` }}>
+      <div
+        className={`hero ${customClass}`}
+        style={{ backgroundImage: `url(${bannerBig})` }}
+      >
         <h1 className="heading">{heading}</h1>
       </div>
     </Wrapper>
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
     transition: all linear 0.2s;
   }
   .hero.blur {
-    filter: blur(50px);
+    filter: blur(20px);
   }
   .hero.focus {
     filter: blur(0);

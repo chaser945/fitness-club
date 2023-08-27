@@ -9,8 +9,11 @@ const ButtonUniq = ({ text, css_class }) => {
   const [outlineHeight, setOutlineHeight] = useState(0)
 
   useEffect(() => {
-    setOutlineWidth(outlineRef.current.offsetWidth)
-    setOutlineHeight(outlineRef.current.offsetHeight)
+    const timeoutId = setTimeout(() => {
+      setOutlineWidth(outlineRef.current.offsetWidth)
+      setOutlineHeight(outlineRef.current.offsetHeight)
+    }, 1000)
+    return () => clearTimeout(timeoutId)
   }, [outlineRef])
   return (
     <Wrapper>
