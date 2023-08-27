@@ -59,6 +59,9 @@ export default RegForm
 
 const Wrapper = styled.section`
   padding: 5em 1.5em;
+  @media (min-width: 1000px) {
+    padding: 11em 1.5em;
+  }
   background-color: var(--clr-body);
   .reg-form-wrapper {
     margin: 0 auto;

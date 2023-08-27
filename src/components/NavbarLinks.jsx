@@ -17,7 +17,9 @@ const NavbarLinks = () => {
             <NavLink
               to={`${c.path}`}
               key={i}
-              className="nav-link"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
               onClick={handleClick}
             >
               {c.name}
@@ -41,6 +43,11 @@ const Wrapper = styled.div`
     color: white;
     transition: var(--transition-short);
     font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+  .nav-link.active {
+    color: var(--clr-primary-1);
+    /* font-weight: 600; */
   }
   .nav-link:hover,
   .nav-link:focus {
