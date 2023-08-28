@@ -4,19 +4,16 @@ import bannerBig from "../assets/images/gym-banner.jpg"
 // import bannerTiny from "../assets/images/gym_banner_tiny.jpg"
 
 const PageHero = ({ heading }) => {
-  const [customClass, setCustomClass] = useState("blur")
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setCustomClass("focus")
-    }, 100)
-    return () => clearTimeout(timeoutId)
-  }, [])
+  // const [customClass, setCustomClass] = useState("blur")
+  // useEffect(() => {
+  //   const timeoutId = setTimeout(() => {
+  //     setCustomClass("focus")
+  //   }, 100)
+  //   return () => clearTimeout(timeoutId)
+  // }, [])
   return (
     <Wrapper>
-      <div
-        className={`hero ${customClass}`}
-        style={{ backgroundImage: `url(${bannerBig})` }}
-      >
+      <div className={`hero`} style={{ backgroundImage: `url(${bannerBig})` }}>
         <h1 className="heading">{heading}</h1>
       </div>
     </Wrapper>
@@ -34,12 +31,12 @@ const Wrapper = styled.div`
     background-size: cover;
     transition: all linear 0.2s;
   }
-  .hero.blur {
+  /* .hero.blur {
     filter: blur(20px);
   }
   .hero.focus {
     filter: blur(0);
-  }
+  } */
 
   .heading {
     color: white;
